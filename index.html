@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            padding:6px 6%;
+            align-items: center;
+            height: 15vh;
+           
+        }
+        .logo img{
+            width: 50px;
+        }
+        ul{
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+            color: black;
+        }
+        .main{
+            display: flex;
+           
+            justify-content: space-between;
+            height:75vh;
+            
+        }
+        .main .left{
+            margin-left: 82px;
+            height: 44vh;
+            width: 40vw;
+            display: flex;
+            gap: 22px;
+            margin-top: 100px;
+        }
+        .redboder{
+            background-color: rgb(255, 0, 119);
+            height: 18vh;
+            width: 0.5vw;
+            display: flex;
+            
+        }
+        .cont h{
+            color: rgb(105, 103, 103);
+            font-size: medium;
+
+        }
+        .cont h1{
+            font-size:43px;
+            
+        }
+        .cont span{
+            font-size: x-large;
+            color: rgb(57, 53, 53);
+
+        }
+        .butn{
+            margin-top: 22px;
+        }
+        .butn button{
+            margin-top: 12px;
+            width: 8vw;
+            height: 4vh;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            background: linear-gradient(to right,rgb(255, 0, 102),rgb(255, 0, 0));
+        }
+        .butn button:hover{
+            width: 10vw;
+           
+        }
+        .right{
+            height: 40vh;
+            width: 30vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            background: linear-gradient(to right,rgb(255, 0, 102),rgb(255, 0, 0));
+        }
+        .right img{
+            width: 40px;
+            
+        }
+        .right a{
+            margin-left: 120px;
+        }
+        .im img{
+            width: 480px;
+            margin-top: 90px;
+           position: absolute;
+        }
+        .right-box{ 
+            width: 60vw;
+            margin-left:18rem;
+            justify-content: space-between;
+            position: relative;
+            display: flex;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5vh;
+        }
+        .box-img{
+            width: 10vw;
+            display: flex;
+            justify-content: space-between;
+            padding: 2px 2%;
+            align-items: center;
+        }
+        @media (max-width:450px) {
+            ul{
+                display: none;
+            }
+            
+        }
+        @media (max-width:675px) {
+            .main{
+                
+                flex-wrap: wrap;
+            }
+            
+        }
+        @media (max-width:675px) {
+            .footer{
+                
+                display: none;
+            }
+            
+        }
+        @media (max-width:675px) {
+            nav{
+               border-bottom: 4px solid red;
+            }
+            
+        }
+        @media (max-width:450px) {
+            .right-box{
+               display: none;
+            }
+            
+        }
+        li{
+            list-style: none;
+           
+        }
+        .menu-icon{
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            display: none;}
+        @media (max-width:675px) {
+            ul{
+                position: absolute;
+                top: 48px;
+                left: 0;
+                right: 0;
+                height: 80vh;
+                flex-direction: column;
+                text-align: center;
+                background: linear-gradient(to right,rgb(255, 0, 102),rgb(255, 0, 0));
+                overflow: hidden;
+            }
+              .menu-icon{
+                display: block;
+            }  
+        }
+        #menuList{
+                transition: all 0.5s;
+            }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <ul id="menuList">
+            <a href="#"><li>Game Controllers</li></a>
+            <a href="#"><li>VR Accessories</li></a>
+            <a href="#"><li>Media Remotes</li></a>
+            <a href="#"><li>Other</li></a>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="ToggleMenu()"></i>
+            
+        </div>
+    </nav>
+    <div class="main">
+        
+        <div class="left">
+            <div class="redboder"></div>
+            <div class="cont">
+           <h1>PS4 V2</h1>
+           <h1>Dualshock 4</h1> 
+        <span>Wireless Controller for PlayStation 4</span>
+        <br><h>(Compatible/Generic)</h>
+        
+        <div class="butn">
+            <h4>$32.50</h4>
+            <button>Buy Now</button>
+        </div>
+        </div>
+        </div>
+        <div class="right-box">
+        <div class="im"><img src="img/controller.png" alt=""></div>
+        
+        <div class="right">
+            
+            <a href="cord"><img src="img/add.png" alt=""></a>
+            <a style="color: white;">Add to Card</a>
+        </div>
+    </div>
+</div>
+<div class="footer">
+
+    <div class="box-img">
+        <a href="#"><img src="img/fb.png" width="10"></a>
+        <a href="#"><img src="img/tw.png" width="20"></a>
+        <a href="#"><img src="img/ig.png" alt=""></a>
+    </div>
+
+</div>
+</body>
+</html>
